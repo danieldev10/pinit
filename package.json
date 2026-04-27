@@ -1,0 +1,14 @@
+{
+  "name": "pinit",
+  "version": "1.0.0",
+  "description": "A small Pinterest video to MP4 downloader for public pin media.",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

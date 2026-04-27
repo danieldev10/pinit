@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Pinit Pinterest Downloader",
+  "version": "0.1.0",
+  "description": "Detect Pinterest video media in your logged-in tab and send it to Pinit for MP4 download.",
+  "permissions": ["downloads", "storage", "tabs", "webRequest"],
+  "host_permissions": [
+    "*://*.pinterest.com/*",
+    "*://*.pinimg.com/*",
+    "http://localhost:3000/*",
+    "http://127.0.0.1:3000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.pinterest.com/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Pinit"
+  }
+}

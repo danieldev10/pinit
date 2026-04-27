@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pinit</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="workspace" aria-labelledby="page-title">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span>Pinit</span>
+        </div>
+
+        <div class="content-grid">
+          <div class="tool-panel">
+            <div class="title-row">
+              <div>
+                <p class="eyebrow">Pinterest video downloader</p>
+                <h1 id="page-title">Pinterest to MP4</h1>
+              </div>
+              <span class="status-pill" id="server-pill">Ready</span>
+            </div>
+
+            <form class="download-form" id="download-form" autocomplete="off">
+              <label class="field-label" for="pin-url">Pin URL</label>
+              <div class="input-row">
+                <input
+                  id="pin-url"
+                  name="url"
+                  type="url"
+                  inputmode="url"
+                  placeholder="https://www.pinterest.com/pin/855683997992821418/"
+                  required
+                />
+                <button class="download-button" type="submit">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3v11m0 0 4-4m-4 4-4-4" />
+                    <path d="M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" />
+                  </svg>
+                  <span>Download MP4</span>
+                </button>
+              </div>
+            </form>
+
+            <div class="status-line" id="status-line" role="status" aria-live="polite">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span id="status-text">Waiting for a link.</span>
+            </div>
+          </div>
+
+          <aside class="preview-panel" aria-label="Download preview">
+            <div class="phone-frame">
+              <div class="pin-card">
+                <div class="video-art">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="pin-controls">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="file-chip">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z" />
+                  <path d="M14 2v5h5" />
+                  <path d="M9 14h6M9 18h6" />
+                </svg>
+                <span>MP4</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pinit</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header>
+        <span class="mark" aria-hidden="true">P</span>
+        <div>
+          <h1>Pinit</h1>
+          <p id="media-status">Looking for Pinterest video media...</p>
+        </div>
+      </header>
+
+      <button id="download-button" type="button" disabled>
+        <span aria-hidden="true">↓</span>
+        Download MP4
+      </button>
+
+      <form id="settings-form">
+        <label for="server-url">Pinit server</label>
+        <div class="server-row">
+          <input id="server-url" name="serverUrl" type="url" spellcheck="false" />
+          <button id="save-button" type="submit">Save</button>
+        </div>
+      </form>
+
+      <p class="hint" id="server-status">Start Pinit with npm run dev before downloading.</p>
+    </main>
+
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>
