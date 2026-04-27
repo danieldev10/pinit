@@ -19,4 +19,4 @@ The extension detects Pinterest video media from your logged-in Pinterest tab an
 
 Pinit locks onto the first video media it detects on the current pin page, so recommendation videos that load later should not replace your download target. Navigate to another pin to clear the lock and detect a new video.
 
-The default Pinit server URL is `http://localhost:3000`. You can change it in the popup when you deploy the server.
+The default Pinit server URL is `https://pinit-xndf.onrender.com`. You can change it in the popup for local testing or another deployment.

@@ -1,4 +1,4 @@
-const DEFAULT_SERVER_URL = "http://localhost:3000";
+const DEFAULT_SERVER_URL = "https://pinit-xndf.onrender.com";
 
 const mediaStatus = document.querySelector("#media-status");
 const downloadButton = document.querySelector("#download-button");
