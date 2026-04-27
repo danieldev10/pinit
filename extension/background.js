@@ -1,4 +1,4 @@
-const DEFAULT_SERVER_URL = "https://pinit-xndf.onrender.com";
+const DEFAULT_SERVER_URL = "https://pinit-production.up.railway.app";
 const MAX_MEDIA_PER_TAB = 12;
 const MEDIA_URL_PATTERN = /^https?:\/\/[^/]*\.?pinimg\.com\/.+\.(m3u8|mp4)(?:[?#].*)?$/i;
 const tabMedia = new Map();
