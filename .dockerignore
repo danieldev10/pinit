@@ -1,0 +1,11 @@
+.DS_Store
+.git
+.github
+node_modules
+npm-debug.log
+downloads
+*.mp4
+*.mov
+*.log
+test
+extension

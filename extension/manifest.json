@@ -8,7 +8,9 @@
     "*://*.pinterest.com/*",
     "*://*.pinimg.com/*",
     "http://localhost:3000/*",
-    "http://127.0.0.1:3000/*"
+    "http://127.0.0.1:3000/*",
+    "https://*.onrender.com/*",
+    "https://*.up.railway.app/*"
   ],
   "background": {
     "service_worker": "background.js"

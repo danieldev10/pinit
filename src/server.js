@@ -12,6 +12,7 @@ const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const publicDir = resolve(__dirname, "..", "public");
 
 const port = Number(process.env.PORT || 3000);
+const host = process.env.HOST || "0.0.0.0";
 const ticketTtlMs = 10 * 60 * 1000;
 const downloadTickets = new Map();
 
@@ -60,8 +61,8 @@ const server = createServer(async (req, res) => {
   }
 });
 
-server.listen(port, () => {
-  console.log(`Pinit is running at http://localhost:${port}`);
+server.listen(port, host, () => {
+  console.log(`Pinit is running on ${host}:${port}`);
 });
 
 setInterval(pruneExpiredTickets, 60_000).unref();

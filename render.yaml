@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: pinit
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
